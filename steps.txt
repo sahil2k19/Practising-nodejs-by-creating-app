@@ -1,0 +1,26 @@
+create folder :- codeal
+
+create file : index.js
+
+now we initialize our project : open terminal and write :- npm init
+
+now we have to make our project scallable( so we create directory )
+
+Starting Express:-
+    install Express   :- npm install express
+    require in our index.js
+
+now we import our express in index.js
+
+we create app.listen in index.js
+
+WE CAN RUN OUR SERVER USING  npx nodemon index.js
+    ->instead of above method we can also go in package.json and edit scripts and 
+        ->add there "start":"npx nodemon indexjs",
+
+
+now we initialize git -> using git init
+
+but now we realize that : folder node_modules is very heavy and this is nothing but all the modules that anyone can download using npm install 
+
+so we ignore that using : making file in main_location and file name would be : .gitignore : and inside that we type :node_modules/ : which can ignore the folder 
