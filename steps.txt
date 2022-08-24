@@ -75,3 +75,9 @@ create file home_controller in controller folder
 we need to exports functions(actions) of controller in routes 
 
 in routes/index.js we store and use
+
+so far we have created home controller and we use it in routes
+    -> using homeController 
+
+
+now we have created users_controllers.js 

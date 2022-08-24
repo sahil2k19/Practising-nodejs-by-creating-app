@@ -12,6 +12,12 @@ const homeController = require('../controllers/home_controller');
 router.get('/', homeController.home);
 
 
+//here we define router other than home 
+router.use('/users', require('./users'));
+
+router.use('/post', require('./post'));
+
+
 //for refrences
 // const homeController = require('../controller/home_controller);
 //router.get('/address', homeController.actionName)
