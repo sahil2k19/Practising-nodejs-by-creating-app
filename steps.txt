@@ -6,6 +6,7 @@ now we initialize our project : open terminal and write :- npm init
 
 now we have to make our project scallable( so we create directory )
 
+_______________________________________________________________________
 Starting Express:-
     install Express   :- npm install express
     require in our index.js
@@ -17,10 +18,60 @@ we create app.listen in index.js
 WE CAN RUN OUR SERVER USING  npx nodemon index.js
     ->instead of above method we can also go in package.json and edit scripts and 
         ->add there "start":"npx nodemon indexjs",
-
+________________________________________________________________
 
 now we initialize git -> using git init
+{
+    some of the git code : git status , git log , git add . , git commit -m "first commit";
+}
 
 but now we realize that : folder node_modules is very heavy and this is nothing but all the modules that anyone can download using npm install 
 
 so we ignore that using : making file in main_location and file name would be : .gitignore : and inside that we type :node_modules/ : which can ignore the folder 
+
+now we use : git add . : to add 
+and then : git commit -m "first commit to commit "
+
+
+______________________________________________________________________________
+
+
+SETUP THE EXPRESS ROUTERS
+----------------------------
+
+routes: are the entry points of all the request from the browser  :
+
+routes : are the dictionary : like which function , controller and action is being called;
+
+------------------
+now we create -> routes folder-> inside  index.js
+
+in index.js import express again;
+
+***** remember everytime when we import express it will never create fresh instance ,,,,, although it just use same instance which created earlier in ./index.js
+
+then we do -> const router  = express.Router();
+
+after that we will exports router so that it will available for all
+        using module.exports = router;
+
+now we import routes/index.js using middleware
+using app.use('/', require('./routes'));
+
+in routes/index.js all the app.get , app.post and everything will be handled by this module
+
+
+********************index.js will use routes/index.js***********************
+
+
+__________________________________________________________________________________
+
+CREATING CONTROLLER 
+-------------------------
+
+group of actions are called controller(or set of actions)
+create file home_controller in controller folder
+
+we need to exports functions(actions) of controller in routes 
+
+in routes/index.js we store and use
