@@ -7,6 +7,11 @@ const port = 8000;
 // we can also write below :- './routes/index.js' :- but it by default pointing to index file
 app.use('/', require('./routes'));
 
+//defining ejs that we gonna use
+app.set('view engine', 'ejs');
+
+//locating views folder(where all our templates located)
+app.set('views', './views');
 
 
 
