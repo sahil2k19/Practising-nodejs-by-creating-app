@@ -111,4 +111,38 @@ CREATE A VIEW FOR HOME
 
     -> create a file home.ejs (which actually a ejs template-> in form of html which can render javascript logic inside that);
 
-        -> after that we have to setup the controller and render the view and passes the context(like title etc);
+        -> after that we have to setup the controller and render the view and passes the context(like title etc); 
+
+
+______________________________________________________________________________
+
+CREATING  PARTIALS
+--------------------------------
+
+-> in VIEWS create 2 files name _header.ejs and _footer.ejs 
+    -> and write there footer and header code
+        -> and use it in all the different views (or u can say include them );
+
+
+________________________________________________________________________________
+
+CREATING LAYOUTS
+---------------------
+
+-> download layouts using npm install express-ejs-layouts
+
+-> in index.js import layouts
+    ->layouts always come before router
+    ->also using in index.js
+
+-> creating layout.ejs in views;
+    -> there we have to define where to write variable parts
+
+
+__________________________________________________________________________
+
+SETTING UP STATIC FILES ACCESS
+---------------------------------
+
+
+

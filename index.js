@@ -1,7 +1,16 @@
 const express = require('express');
 const app = express();
 
+//layouts
 const port = 8000;
+
+
+// importing express layouts
+const expressLayouts = require('express-ejs-layouts');
+
+
+// using layouts
+app.use(expressLayouts);
 
 // use express router
 // we can also write below :- './routes/index.js' :- but it by default pointing to index file
