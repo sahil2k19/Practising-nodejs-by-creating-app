@@ -3,7 +3,9 @@
 //all these are just an actions to take
 
 module.exports.profile = (req, res) => {
-    return res.end('<h1>Users Profile</h1>')
+    return res.render('user_profile', {
+        'title': 'userprofile',
+    })
 }
 
 module.exports.users = (req, res) => {

@@ -6,6 +6,7 @@ now we initialize our project : open terminal and write :- npm init
 
 now we have to make our project scallable( so we create directory )
 
+
 ____________________________________________________________________
 Starting Express:-
     install Express   :- npm install express
@@ -16,7 +17,9 @@ now we import our express in index.js
 we create app.listen in index.js
 
 WE CAN RUN OUR SERVER USING  npx nodemon index.js
+
     ->instead of above method we can also go in package.json and edit scripts and 
+
         ->add there "start":"npx nodemon indexjs",
 ________________________________________________________________
 
@@ -97,3 +100,15 @@ after that we have to mention the location of all the views(templates)
 for that earlier we have used :(path.join('/path here'))
 
 but know we use: app.set('views','./views');
+
+
+__________________________________________________________________________
+
+CREATE A VIEW FOR HOME
+--------------------------
+
+-> inside views folder 
+
+    -> create a file home.ejs (which actually a ejs template-> in form of html which can render javascript logic inside that);
+
+        -> after that we have to setup the controller and render the view and passes the context(like title etc);
