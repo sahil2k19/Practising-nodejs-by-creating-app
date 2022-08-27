@@ -144,5 +144,30 @@ __________________________________________________________________________
 SETTING UP STATIC FILES ACCESS
 ---------------------------------
 
+->we need to mention the location of assets 
+    -> in index.js 
+        -> using app.use(express.static('./assets'));
+    
+
+->create asssets folder in main directory
+    ->create css folder
+        -> create layout.css inside that
+        ->create images and Js also
+
+->now we need to link the css with views(layout.ejs);
+    -> in layout.ejs link css
+        -> under href(tag) put FORWARD-SLASH(/)-> which indicates the root dir;
+            -> /css/layout.css
+                -> here forward slash is root dir for assets 
+
+-> we cannot add addittion styles and scripts in particular views 
+    -> like in user_profile.ejs if we write our css and js inside that, it will shows in body tag of layout.ejs when we inspect element at local-host ;
+        -> to counter this problem we used to extract the css and js file from user_profile.ejs 
+            ->to do so we put following code in index.js
+            -> we can use app.use('layout extractStyles', true);
+            -> also for js app.use('layout extractScripts', true);
+        -> after doing above we should now mention where to extract this css and js
+            -> to do so we mention <%-style%> and <%-script%> in layout.ejs
+     
 
 

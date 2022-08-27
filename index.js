@@ -8,9 +8,18 @@ const port = 8000;
 // importing express layouts
 const expressLayouts = require('express-ejs-layouts');
 
+//locating assets 
+app.use(express.static('./assets'));
 
 // using layouts
 app.use(expressLayouts);
+
+//extract style and scripts from sub pages into the layouts
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
+
+
+
 
 // use express router
 // we can also write below :- './routes/index.js' :- but it by default pointing to index file
