@@ -5,7 +5,14 @@ create file : index.js
 now we initialize our project : open terminal and write :- npm init
 
 now we have to make our project scallable( so we create directory )
-
+    ->assets
+    ->config
+    ->controller
+    ->models
+    ->routes
+    ->views
+    ->gitignore
+    ->index.js
 
 ____________________________________________________________________
 Starting Express:-
@@ -201,3 +208,42 @@ CONNECTING DATA-BASE (MongoDB)
 
 ->in index.js
     -> const db = require('./config/mongoose');
+
+
+_________________________________________________________________________
+
+MANUAL AUTHENTICATION
+-------------------------
+
+->inside models create users
+    ->users.js
+    ->now we need to create a schema (for that we need mongoose)
+
+        -> const mongoose = require('mongoose');
+
+        -> making variable to access the schema 
+            -> const userSchema = new mongoose.Schema({
+                email:{
+
+                },
+                password:{
+
+                },
+                name:{
+
+                },
+            })  
+            -> we will not stop here we add a timestamp of user(created in database);
+            -> so we add timestamps after all the fields
+            -> {
+                timestamps:true
+            });
+
+        -> creating variable to use collection(model) and exportss
+        -> const User = mongoose.model('User', userSchema);
+        
+        ->module.exports = User; 
+
+_________________________________________________________________________
+
+RENDERRING PAGES FOR SINGN UP AND SINGN IN
