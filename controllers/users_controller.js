@@ -13,3 +13,17 @@ module.exports.users = (req, res) => {
         'title': ''
     })
 }
+
+//render the sign up page
+module.exports.signUp = (req, res) => {
+    return res.render('user_sign_up', {
+        title: 'codeial | Sign Up'
+    })
+}
+
+//render the sign in page
+module.exports.signIn = (req, res) => {
+    return res.render('user_sign_in', {
+        title: 'codeial | Sign in'
+    })
+}

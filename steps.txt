@@ -247,3 +247,9 @@ MANUAL AUTHENTICATION
 _________________________________________________________________________
 
 RENDERRING PAGES FOR SINGN UP AND SINGN IN
+--------------------------------------------
+
+-> create 2ejs file in views -> user_sign_in and user_sign_up 
+
+-> render them using controller in users_controllers
+

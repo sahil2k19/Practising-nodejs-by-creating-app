@@ -22,5 +22,5 @@ router.use('/post', require('./post'));
 // const homeController = require('../controller/home_controller);
 //router.get('/address', homeController.actionName)
 
-console.log('router loaded');
+
 module.exports = router;

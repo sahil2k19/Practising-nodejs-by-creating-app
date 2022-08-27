@@ -14,7 +14,9 @@ router.get('/profile', usersController.profile);
 //this router can go to: locahost/users/
 router.get('/', usersController.users);
 
+router.get('/sign-up', usersController.signUp);
+
+router.get('/sign-in', usersController.signIn);
 
 
-console.log('profile router loaded');
 module.exports = router;
