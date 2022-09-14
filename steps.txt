@@ -253,3 +253,11 @@ RENDERRING PAGES FOR SINGN UP AND SINGN IN
 
 -> render them using controller in users_controllers
 
+_________________________________________________________________________
+
+CREATIING FORMS FOR SIGN-UP AND SIGN-IN
+-------------------------------------------
+-> we need to create from in-order-to send user data to database
+-> we have created 2 form in 2 ejs file 
+-> then we setup our controller 
+->
