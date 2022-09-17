@@ -1,7 +1,7 @@
 
 # All Steps
 
-#### create folder :- codeal
+#### create folder :- codeial
 #### create file : index.js
 ### Now we initialize our project
     npm init
